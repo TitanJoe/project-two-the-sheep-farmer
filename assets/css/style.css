@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.field-div {
+    width: 75%;
+    height: 800px;
+    background-color: lightgreen;
+    border: 10px solid brown;
+    margin: 0 12%;
+}
+
+.header {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 20px;
+}
