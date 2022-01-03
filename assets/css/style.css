@@ -24,5 +24,10 @@ body {
 }
 
 .sheep {
-    width: 50px;
+    display: inline-block;
+    width: 30%;
+}
+
+#how-to-play {
+    text-align: center;
 }
