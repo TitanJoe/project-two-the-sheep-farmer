@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Heebo&display=swap');
+
 body {
     margin: 0;
+    font-family: 'Dosis', sans-serif;
+
 }
 
 .field-div {
@@ -23,11 +27,16 @@ body {
     margin: 0 44%;
 }
 
-.sheep {
-    display: inline-block;
-    width: 30%;
-}
-
 #how-to-play {
     text-align: center;
+}
+
+.sheep {
+    width: 75px;
+}
+
+.sheep-div {
+    display: inline-block;
+    width: 30%;
+    height: 400px;
 }
