@@ -10,18 +10,65 @@
 
 <body>
     <header>
-        <h1 class="header">The Sheep Farmer</h1>
+        <h1 id="header">The Sheep Farmer</h1>
     </header>
-    <div class="field-div">
-        <div id="start-menu">
+    <div id="field-div">
+        <div class="out-game-menus" id="start-menu">
             <h2>How to play:</h2>
             <p>Firstly click the start button</p>
             <p>Then click on the sheep to move them to the trailer</p>
             <p>The faster you complete the task the lower your time score!</p>
-            <button onclick="start()">Start</button>
+            <button class="menu-button">Start</button>
+        </div>
+        <div>
+            <div class="field-sheep">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs">
+            </div>
+            <div class="field-sheep">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs">
+            </div>
+            <div class="field-sheep">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs">
+            </div>
+            <div class="field-sheep">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs">
+            </div>
+            <div class="field-sheep">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs">
+            </div>
+            <div class="field-sheep">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs">
+            </div>
+        </div>
+        <div class="out-game-menus" id="end-menu">
+            <h2>Well done!</h2>
+            <p>Your time was 0 seconds!</p>
+            <button class="menu-button">Play again</button>
         </div>
     </div>
-    <div><img src="assets/images/tractor.png" id="tractor-image"></div>
+    <div>
+        <img src="assets/images/tractor.png" id="tractor-image">
+        <div>
+            <div class="tractor-sheep">
+                <img src="assets/images/sheep.png" class="tractor-sheep-imgs">
+            </div>
+            <div class="sheep">
+                <img src="assets/images/sheep.png" class="tractor-sheep-imgs">
+            </div>
+            <div class="tractor-sheep">
+                <img src="assets/images/sheep.png" class="tractor-sheep-imgs">
+            </div>
+            <div class="tractor-sheep">
+                <img src="assets/images/sheep.png" class="tractor-sheep-imgs">
+            </div>
+            <div class="tractor-sheep">
+                <img src="assets/images/sheep.png" class="tractor-sheep-imgs">
+            </div>
+            <div class="tractor-sheep">
+                <img src="assets/images/sheep.png" class="tractor-sheep-imgs">
+            </div>
+        </div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 

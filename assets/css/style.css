@@ -1,23 +1,25 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Heebo&display=swap');
 
 body {
     margin: 0;
     font-family: 'Dosis', sans-serif;
-
+    text-align: center;
+    font-size: 30px;
 }
 
-.header {
-    text-align: center;
+#header {
     font-size: 100px;
     margin-top: 20px;
 }
 
-.field-div {
+#field-div {
     width: 75%;
     height: 800px;
     background-color: lightgreen;
     border: 10px solid brown;
     margin: 0 12%;
+    border-radius: 1%;
 }
 
 #tractor-image{
@@ -27,22 +29,35 @@ body {
     margin: 0 44%;
 }
 
+.out-game-menus {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+}
+
+.menu-button {
+    font-size: 30px;
+}
+
 #start-menu {
-    text-align: center;
-    font-size: 30px;
+    width: 750px;
+    margin-left: -375px;
+    visibility: hidden;
 }
 
-#start-menu button {
-    text-align: center;
-    font-size: 30px;
-}
-
-.sheep-div {
+.field-sheep {
     display: inline-block;
-    width: 30%;
-    height: 400px;
+    width: 33%;
+    height: 50%;
 }
 
-.sheep {
-    width: 75px;
+.field-sheep-imgs {
+    width: 25%;
+    margin-top: 20%;
+}
+
+#end-menu {
+    width: 310px;
+    margin-left: -155px;
+    visibility: hidden;
 }
