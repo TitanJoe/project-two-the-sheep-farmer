@@ -1,79 +1,78 @@
+let sheepCount = 0;
+let startTime;
+let endTime;
 
 function start(){
-    // add sheep to field
-    var startTime = currentTime;
-    var SheepCount = 0;
+    document.getElementById("start-menu").style.visibility = 'hidden';
+    document.getElementById("sheep-field").style.visibility = 'visible';
+    startTime = Date.now();
 };
 
-function clickSheepOne (){
-    // remove sheepOne from field-div
-    // add sheepOne to tractor-div
-    SheepCount++;
-    if (SheepCount = 6){
-        Terminate()
-    };
-};
+function sheepOne(){
+    document.getElementsByClassName("field-sheep-imgs")[0].style.visibility = 'hidden';
+    document.getElementsByClassName("trailer-sheep-imgs")[5].style.visibility = 'visible';
+    sheepCount++;
+    if(sheepCount === 6){
+        terminate()
+    }
+}
 
-function clickSheepTwo (){
-    // remove sheepTwo from field-div
-    // add sheepTwo to tractor-div
-    SheepCount++;
-    if (SheepCount = 6){
-        Terminate()
-    };
-};
+function sheepTwo(){
+    document.getElementsByClassName("field-sheep-imgs")[1].style.visibility = 'hidden';
+    document.getElementsByClassName("trailer-sheep-imgs")[4].style.visibility = 'visible';
+    sheepCount++;
+    if(sheepCount === 6){
+        terminate()
+    }
+}
 
-function clickSheepThree (){
-    // remove sheepThree from field-div
-    // add sheepThree to tractor-div
-    SheepCount++;
-    if (SheepCount = 6){
-        Terminate()
-    };
-};
+function sheepThree(){
+    document.getElementsByClassName("field-sheep-imgs")[2].style.visibility = 'hidden';
+    document.getElementsByClassName("trailer-sheep-imgs")[3].style.visibility = 'visible';
+    sheepCount++;
+    if(sheepCount === 6){
+        terminate()
+    }
+}
 
-function clickSheepFour (){
-    // remove sheepFour from field-div
-    // add sheepFour to tractor-div
-    SheepCount++;
-    if (SheepCount = 6){
-        Terminate()
-    };
-};
+function sheepFour(){
+    document.getElementsByClassName("field-sheep-imgs")[3].style.visibility = 'hidden';
+    document.getElementsByClassName("trailer-sheep-imgs")[2].style.visibility = 'visible';
+    sheepCount++;
+    if(sheepCount === 6){
+        terminate()
+    }
+}
 
-function clickSheepFive (){
-    // remove sheepFive from field-div
-    // add sheepFive to tractor-div
-    SheepCount++;
-    if (SheepCount = 6){
-        Terminate()
-    };
-};
+function sheepFive(){
+    document.getElementsByClassName("field-sheep-imgs")[4].style.visibility = 'hidden';
+    document.getElementsByClassName("trailer-sheep-imgs")[1].style.visibility = 'visible';
+    sheepCount++;
+    if(sheepCount === 6){
+        terminate()
+    }
+}
 
-function clickSheepSix (){
-    // remove sheepSix from field-div
-    // add sheepSix to tractor-div
-    SheepCount++;
-    if (SheepCount = 6){
-        Terminate()
-    };
-};
+function sheepSix(){
+    document.getElementsByClassName("field-sheep-imgs")[5].style.visibility = 'hidden';
+    document.getElementsByClassName("trailer-sheep-imgs")[0].style.visibility = 'visible';
+    sheepCount++;
+    if(sheepCount === 6){
+        terminate()
+    }
+}
 
-function Terminate (){
-    document.getElementById("field-div").innerHTML =`
-        <h2>well done!</h2>
-        <p>your time was:<span id="score-span"></span></p>
-        <button onclick="restart()">Restart</button>`;
-   score();
+function terminate(){
+    document.getElementById("end-menu").style.visibility = 'visible';
+    score()
 }
 
 function score(){
-    var endTime = currentTime
-    var time = endTime - startTime
-    document.getElementById("score-span").innerHTML = `${time} seconds!`
+    endTime = Date.now();
+    let yourTime = Math.floor(((endTime - startTime) / 1000) * 10) / 10;
+    document.getElementById("score-span").innerHTML = yourTime;
+}
 
-};
-
-function restart(){
-    //reload page
-};
+function restart (){
+    location.reload()
+}

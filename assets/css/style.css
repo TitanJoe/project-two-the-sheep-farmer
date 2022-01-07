@@ -27,7 +27,7 @@ body {
     top: -60px;
 }
 
-.out-game-menus {
+.game-menus {
     position: absolute;
     top: 400px;
     left: 50%;
@@ -40,6 +40,9 @@ body {
 #start-menu {
     width: 750px;
     margin-left: -375px;
+}
+
+#sheep-field {
     visibility: hidden;
 }
 
@@ -60,17 +63,6 @@ body {
     visibility: hidden;
 }
 
-.tractor-sheep-imgs {
-    width: 70px;
-}
-
-.tractor-sheep {
-    width: 48%;
-    display: inline-block;
-    height: 100px;
-    margin-top: 10px;
-}
-
 .trailer-div {
     position: relative;
     top: -60px;
@@ -80,4 +72,16 @@ body {
     width: 200px;
     background-color: burlywood;
     border: solid brown 5px;
+}
+
+.trailer-sheep {
+    width: 48%;
+    display: inline-block;
+    height: 100px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.trailer-sheep-imgs {
+    width: 70px;
 }
