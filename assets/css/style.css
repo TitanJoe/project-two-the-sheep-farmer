@@ -47,9 +47,10 @@ body {
 }
 
 .field-sheep {
-    display: inline-block;
+    display: block;
     width: 33%;
     height: 50%;
+    float: left;
 }
 
 .field-sheep-imgs {
@@ -67,7 +68,7 @@ body {
     position: relative;
     top: -60px;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -105px;
     height: 300px;
     width: 200px;
     background-color: burlywood;
@@ -84,4 +85,76 @@ body {
 
 .trailer-sheep-imgs {
     width: 70px;
+}
+
+@media screen and (max-width: 1440px){
+    #field-div {
+        height: 650px;
+    }
+
+    .game-menus {
+        top: 300px;
+    }
+
+    .field-sheep-imgs {
+        width: 40%;
+    }
+    #start-menu {
+        width: 750px;
+        margin-left: -375px;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    #header {
+        font-size: 75px;
+    }
+    
+    #field-div {
+        height: 500px;
+    }
+
+    .game-menus {
+        top: 200px;
+        font-size: 25px;
+    }
+
+    .trailer-div {
+        margin-left: -80px;
+        height: 200px;
+        width: 150px;
+    }
+
+    #tractor-image {
+        width: 160px;
+    }
+
+    .trailer-sheep {
+        height: 29%;
+    }
+
+    .trailer-sheep-imgs {
+        height: 49px;
+        width: auto;
+    }
+
+    #start-menu {
+        width: 500px;
+        margin-left: -250px;
+    }
+
+    .menu-button {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #header {
+        font-size: 40px;
+    }
+
+    .game-menus {
+        margin-top: 5px;
+        width: 20px;
+    }
 }
