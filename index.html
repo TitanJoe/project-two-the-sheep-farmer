@@ -4,70 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Sheep Farmer</title>
+    <meta name="description" content="Help the farmer put the sheep in the trailer">
+    <meta name="keywords" content="Sheep, game, score, farmers">
     <link rel="stylesheet" href="assets/css/style.css">
+    <title>The Sheep Farmer</title>
 </head>
 
 <body>
     <header>
+        <!-- the main title of the page -->
         <h1 id="header">The Sheep Farmer</h1>
     </header>
     <div id="field-div">
+        <!-- The main menu of the game when you load the page -->
         <div class="game-menus" id="start-menu">
             <h2>How to play:</h2>
             <p>First click the start button</p>
             <p>Then click on the sheep to move them to the trailer</p>
             <p>The faster you complete the task the lower your time score!</p>
-            <button class="menu-button" onclick="start()">Start</button>
+            <button class="menu-button" onclick="start()" title="click me to start the game">Start</button>
         </div>
         <div id="sheep-field">
+            <!-- the sheep images that are revealed when you press start -->
             <div class="field-sheep">
-                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepOne()">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepOne()" alt="this is a sheep in the field click me to put me in the trailer!">
             </div>
             <div class="field-sheep">
-                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepTwo()">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepTwo()" alt="this is a sheep in the field click me to put me in the trailer!">
             </div>
             <div class="field-sheep">
-                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepThree()">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepThree()" alt="this is a sheep in the field click me to put me in the trailer!">
             </div>
             <div class="field-sheep">
-                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepFour()">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepFour()" alt="this is a sheep in the field click me to put me in the trailer!">
             </div>
             <div class="field-sheep">
-                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepFive()">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepFive()" alt="this is a sheep in the field click me to put me in the trailer!">
             </div>
             <div class="field-sheep">
-                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepSix()">
+                <img src="assets/images/sheep.png" class="field-sheep-imgs" onclick="sheepSix()" alt="this is a sheep in the field click me to put me in the trailer!">
             </div>
         </div>
+        <!-- this div will be revealed when you complete the game -->
         <div class="game-menus" id="end-menu">
             <h2>Well done!</h2>
             <p>Your time was <span id="score-span">0</span> seconds!</p>
-            <button class="menu-button" onclick="restart()">Play again</button>
+            <button class="menu-button" onclick="restart()" title="Click me to play again">Play again</button>
         </div>
     </div>
     <div>
-        <div class="trailer-div">
+        <!-- these images will be revealed in the trailer when a sheep is clicked from the list above -->
+        <div class="trailer-div" alt="the trailer atached to the tractor">
             <div class="trailer-sheep">
-                <img src="assets/images/sheep.png" class="trailer-sheep-imgs">
+                <img src="assets/images/sheep.png" class="trailer-sheep-imgs" alt="this is a sheep in the trailer well done!">
             </div>
             <div class="trailer-sheep">
-                <img src="assets/images/sheep.png" class="trailer-sheep-imgs">
+                <img src="assets/images/sheep.png" class="trailer-sheep-imgs" alt="this is a sheep in the trailer well done!">
             </div>
             <div class="trailer-sheep">
-                <img src="assets/images/sheep.png" class="trailer-sheep-imgs">
+                <img src="assets/images/sheep.png" class="trailer-sheep-imgs" alt="this is a sheep in the trailer well done!">
             </div>
             <div class="trailer-sheep">
-                <img src="assets/images/sheep.png" class="trailer-sheep-imgs">
+                <img src="assets/images/sheep.png" class="trailer-sheep-imgs" alt="this is a sheep in the trailer well done!">
             </div>
             <div class="trailer-sheep">
-                <img src="assets/images/sheep.png" class="trailer-sheep-imgs">
+                <img src="assets/images/sheep.png" class="trailer-sheep-imgs" alt="this is a sheep in the trailer well done!">
             </div>
             <div class="trailer-sheep">
-                <img src="assets/images/sheep.png" class="trailer-sheep-imgs">
+                <img src="assets/images/sheep.png" class="trailer-sheep-imgs" alt="this is a sheep in the trailer well done!">
             </div>
         </div>
-        <img id="tractor-image" src="assets/images/tractor.png">
+        <!-- this image shows the tractor below the traier div -->
+        <img id="tractor-image" src="assets/images/tractor.png" alt="tractor with the atached trailer">
     </div>
     <script src="assets/js/script.js"></script>
 </body>
