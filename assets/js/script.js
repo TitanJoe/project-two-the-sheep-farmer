@@ -13,7 +13,7 @@ function start() {
     document.getElementById("start-menu").style.visibility = 'hidden';
     document.getElementById("sheep-field").style.visibility = 'visible';
     startTime = Date.now();
-};
+}
 
 
 /**
@@ -28,7 +28,7 @@ function sheepOne() {
     document.getElementsByClassName("trailer-sheep-imgs")[5].style.visibility = 'visible';
     sheepCount++;
     if (sheepCount === 6) {
-        terminate()
+        terminate();
     }
 }
 
@@ -44,7 +44,7 @@ function sheepTwo() {
     document.getElementsByClassName("trailer-sheep-imgs")[4].style.visibility = 'visible';
     sheepCount++;
     if (sheepCount === 6) {
-        terminate()
+        terminate();
     }
 }
 
@@ -60,7 +60,7 @@ function sheepThree() {
     document.getElementsByClassName("trailer-sheep-imgs")[3].style.visibility = 'visible';
     sheepCount++;
     if (sheepCount === 6) {
-        terminate()
+        terminate();
     }
 }
 
@@ -76,7 +76,7 @@ function sheepFour() {
     document.getElementsByClassName("trailer-sheep-imgs")[2].style.visibility = 'visible';
     sheepCount++;
     if (sheepCount === 6) {
-        terminate()
+        terminate();
     }
 }
 
@@ -92,7 +92,7 @@ function sheepFive() {
     document.getElementsByClassName("trailer-sheep-imgs")[1].style.visibility = 'visible';
     sheepCount++;
     if (sheepCount === 6) {
-        terminate()
+        terminate();
     }
 }
 
@@ -108,7 +108,7 @@ function sheepSix() {
     document.getElementsByClassName("trailer-sheep-imgs")[0].style.visibility = 'visible';
     sheepCount++;
     if (sheepCount === 6) {
-        terminate()
+        terminate();
     }
 }
 
@@ -119,7 +119,7 @@ function sheepSix() {
  */
 function terminate() {
     document.getElementById("end-menu").style.visibility = 'visible';
-    score()
+    score();
 }
 
 /**
@@ -139,5 +139,5 @@ function score() {
  * reloads the page
  */
 function restart() {
-    location.reload()
+    location.reload();
 }
